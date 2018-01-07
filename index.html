@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Oppenheimer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- section 1: landing screen -->
+  <section class='parallax-container parallax1'>
+
+    <!-- screen animation -->
+    <div class='parallax1__screen'></div>
+
+    <header class='parallax1__header'>
+
+        <!-- name -->
+        <h1 class='parallax__header__h1'>
+
+          <!-- max -->
+          <div>
+            <span class='z12'>M</span>
+            <span class='z8'>a</span>
+            <span class='z8'>x</span>
+          </div>
+
+          <!-- houston -->
+          <div>
+            <span class='z11'>H</span>
+            <span class='z10'>o</span>
+            <span class='z5'>u</span>
+            <span class='z5'>s</span>
+            <span class='z5'>t</span>
+            <span class='z10'>o</span>
+            <span class='z5'>n</span>
+          </div>
+
+          <!-- oppenheimer -->
+          <div>
+            <span class='z10'>O</span>
+            <span class='z2'>p</span>
+            <span class='z2'>p</span>
+            <span class='z2'>e</span>
+            <span class='z2'>n</span>
+            <span class='z11'>h</span>
+            <span class='z2'>e</span>
+            <span class='z2'>i</span>
+            <span class='z12'>m</span>
+            <span class='z2'>e</span>
+            <span class='z2'>r</span>
+          </div>
+        </h1>
+
+        <!-- mini-bio -->
+        <h5 class='parallax1__header__h5'>
+          Full-stack web developer, living, learning, and experimenting.
+        </h5>
+    </header>
+
+    <!-- parallax photo -->
+    <div class='parallax'>
+      <img class='parallax__img' src='./images/photos/hcmc.jpg' />
+    </div>
+  </section>
+
+  <!-- section 2: about -->
+  <section class='about'>
+
+    <!-- photo & hi (left)-->
+    <div class='about__left'>
+      <img class='about__left__myPhoto' src='./images/photos/max-houston-oppenheimer-headshot.jpg' />
+      <h5 class='about__left__h5'>
+        Hi, I'm
+        <span>Max</span>
+      </h5>
+    </div>
+
+    <!-- introduction (right) -->
+    <div class='about__right'>
+      <div class='left-align'>
+        <p class='introduction__p flow-text'>
+          &emsp;&emsp; I'm a
+          <strong>full-stack web developer</strong> searching for an employer and collaborators who want to create awesome things,
+          experiment with new technologies, and make their communities better. I'm a trial-by-fire kinda guy and
+          <strong>always looking for a challenge</strong>.
+        </p>
+        <p class='introduction__p flow-text'>
+          &emsp;&emsp; I love building MERN apps, comfortable with Ruby on Rails, and learning Django too! I'm particularly interested in animation and building truly interactive apps. <strong>I'm looking for a fun-loving team with a colaborative spirit</strong> and a drive to build apps with unique and intuitive designs.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+
+  
+  <!-- section 3: portfolio/resume/contact carousel -->
+  <section class='carousel-container'>
+    
+    <!-- carousel navigation -->
+    <nav>
+      <ul class='tabs'>
+        <li class='tab'>
+          <a href='#portfolio'>portfolio</a>
+        </li>
+        <li class='tab'>
+          <a class='active' href='#resume'>resume</a>
+        </li>
+        <li class='tab'>
+          <a href='#contact'>contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- portfolio -->
+    <div id='portfolio' class='carousel'>
+      <div class='tile-container'>
+        <div class='tile tile--small'>
+          <div class='tile__info'>
+            <h4 class='tile__info__h4'>Tower of Hanoi</h4>
+            <h6 class='tile__info__h6'>Classic puzzle with a retro outfit.</b></h6>
+            <p class='tile__info__description'>
+              &emsp;This adaption of Tower of Hanoi was my first project! It served as a playground for experimentation in HTML, CSS, and
+              JavaScript. I've learned so much since finishing this game, so cut it some slack :p
+            </p>
+          </div>
+          <div class='tile__image tile__image--hanoi'></div>
+        </div>
+        <div class='tile tile--large'>
+          <div class='tile__info'>
+            <h4 class='tile__info__h4'>memorTree</h4>
+            <h6 class='tile__info__h6'>A feel good page that generates a unique tree just for you.</h6>
+            <p class='tile__info__description'>
+              &emsp;This is my most recent project and my favorite. This project served as a creative outlet and challenge to randomly
+              generate a binary tree and transform it into something beautiful.
+            </p>
+            <!-- <p class='technologies'>
+              Technologies used:
+              <em>React, NodeJS</em>
+            </p> -->
+          </div>
+          <div class='tile__image tile__image--memorTree'></div>
+        </div>
+        <div class='tile tile--small'>
+          <div class='tile__info'>
+            <h4 class='tile__info__h4'>codePOS</h4>
+            <h6 class='tile__info__h6'>Point of Sale app with a focus on quick and easy UI.</h6>
+            <p class='tile__info__description'>
+              &emsp;My first dive into Ruby on Rails! This application allows users to build a menu and craft a customer order with a simple
+              touch friendly interface.
+            </p>
+            <!-- <p class='technologies'>
+              Technologies used:
+              <em>Ruby on Rails, PostgreSQL</em>
+            </p> -->
+          </div>
+          <div class='tile__image tile__image--codePOS'></div>
+        </div>
+        <div class='tile tile--med'>
+          <div class='tile__info'>
+            <h4 class='tile__info__h4'>GA Aha!</h4>
+            <h6 class='tile__info__h6'>Simple blog built for GA students</h6>
+            <p class='tile__info__description'>
+              &emsp;This project was built with React by a team of four General Assembly students. We wanted to create a place for students
+              to share their 'Aha moments'. This project served as crash-course in team-based development.
+            </p>
+            <!-- <p class='technologies'>
+              Technologies used:
+              <em>MERN stack, MaterializeCSS</em>
+            </p> -->
+          </div>
+          <div class='tile__image tile__image--ga-aha'></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- resume -->
+    <div id='resume' class='carousel'>
+      <ul class="collapsible popout" data-collapsible="accordion">
+        <h5 class='collapsible__section-header'>Experience</h5>
+
+        <li>
+          <div class="collapsible-header">
+
+            <img class='collapsible-header__icon' src='images/icons/code-braces.png'>
+
+            <div class='collapsible-header__content'>
+              <h6>
+                <b>General Assembly,</b> Washington, D. C. -- <em>Web Development Immersive Instructor</em>
+              </h6>
+              <p>November 2017 - present</p>
+            </div>
+          </div>
+          <div class="collapsible-body">
+            <span>&emsp;As an instructor at GA, I get to aid students on their journey becoming web developers. I teach lectures, create lesson and exercise content, and study new material to benefit students as a source of knowledge and support. I excell at making complex material digestible for beginners and work to help every student reach their potential.</span>
+          </div>
+        </li>
+        
+        <li>
+          <div class="collapsible-header">
+            
+            <img class='collapsible-header__icon' src='images/icons/food-apple.png'>
+
+            <div class='collapsible-header__content'>
+              <h6>
+                <b>Wisdom Educational Institute,</b> Taipei, Taiwan. --
+                <em>English Teacher</em>
+              </h6>
+              <p>August 2016 - July 2017</p>
+            </div>
+          </div>
+          <div class="collapsible-body">
+            <span>&emsp;At Wisdom, I honed communication and teaching skills to lead four kindergarten and elementary English classes. As a teacher, I managed classrooms of up to 15 students and planned fun and educational lessons to accomodate varying learning styles and skill levels.</span>
+          </div>
+        </li>
+
+        <li>
+          <div class="collapsible-header">
+            
+            <img class='collapsible-header__icon' src='images/icons/hospital-building.png'>
+
+            <div class='collapsible-header__content'>
+              <h6>
+                <b>Baptist Health Louisville,</b> Louisville, Kentucky --
+                <em>Surgical Orderly</em>
+              </h6>
+              <p>September 2015 - April 2016</p>
+            </div>
+          </div>
+          <div class="collapsible-body">
+            <span>&emsp;At Baptist, I worked closely with doctors, nurses, and other support staff to ensure smooth continuum of care. I provided comfort and reassurance to surgery patients through transportation and surgery preperation. I was also trusted to aid orthopedic surgeons during anterior hip replacement surgeries. Ask me about it if you aren't squeemish!</span>
+          </div>
+        </li>
+
+        <li>
+          <div class="collapsible-header">
+            
+            <img class='collapsible-header__icon' src='images/icons/flask-outline.png'>
+
+            <div class='collapsible-header__content'>
+              <h6>
+                <b>Tulane Department of Psychology,</b> New Orleans, Louisiana --
+                <em>Undergraduate Research Assistant</em>
+              </h6>
+              <p>January 2013 - May 2015</p>
+            </div>
+          </div>
+          <div class="collapsible-body">
+            <span>&emsp;During my undergraduate education at Tulane, I worked in two psychology research labs studying childhood anxiety and autism spectrum disorder (ASD). I had the oportunity to conduct a personal thesis project too! Someday, I would love to build applications and collect data to learn more about human behavior and mental health.</span>
+          </div>
+        </li>
+
+        <h5 class='collapsible__section-header'>Education</h5>
+
+          <li>
+            <div class="collapsible-header">
+              
+              <img class='collapsible-header__icon' src='images/icons/code-braces.png'>
+
+              <div class='collapsible-header__content'>
+                <h6>
+                  <b>General Assembly,</b> Washington, D. C. --
+                  <em>Web Development Immersive Student</em>
+                </h6>
+                <p>August 2017 - November 2017</p>
+              </div>
+            </div>
+            <div class="collapsible-body">
+              <span>&emsp;As a student in GA's 12-week full-stack web development course, I grew as a problem solver and programmatic thinker. As I learned the foundations of programming, I realized web-development as an outlet to exercise both analytical and creative thinking.</span>
+            </div>
+          </li>
+
+          <li>
+            <div class="collapsible-header">
+              
+              <img class='collapsible-header__icon' src='images/icons/school.png'>
+
+              <div class='collapsible-header__content'>
+                <h6>
+                  <b>Tulane University,</b> New Orleans, Louisiana --
+                  <em>B. S. Psychology</em>
+                </h6>
+                <p>August 2011 - May 2015</p>
+              </div>
+            </div>
+            <div class="collapsible-body">
+              <span>&emsp;At Tulane, I graduated with honors meeting requirements for a major in psychology and a minor in public health. I took almost 50 hours of hard-science and math courses and filled the rest of my schedule with a variety of studio art courses like photography and glass-sculpture.</span>
+            </div>
+          </li>
+        </ul>
+
+
+    </div>
+
+    <!-- contact -->
+    <div id='contact' class='carousel'>
+      <div class='form-container'>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeRBQrdfziudA9xXxP5d3lTjtn3m51y2IqfFtjlrdRkrifa4Q/viewform?embedded=true"
+        width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="auto">
+          Loading...
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- second photo and projects -->
+  <!-- <div class='projects parallax2 parallax-container col s12'>
+    <section class='center-align'>
+      <h3 class='center-align'>Works in progress!</h3>
+
+      <div class='projectContainer center-align'>
+        <a target="_blank" href='https://oppnheimer.github.io/retro-Hanoi/'>
+          <div class='projectButton hanoi'>
+            <div class='description'>
+              
+            </div>
+          </div>
+        </a>
+        <a target="_blank" href='https://oppnheimer-project2.herokuapp.com'>
+          <div class='projectButton codePOS'>
+            <div class='description'>
+              
+            </div>
+          </div>
+        </a>
+
+        <a target="_blank" href='https://oppnheimer.github.io/project3-front/'>
+          <div class='projectButton gaAha'>
+            <div class='description'>
+              
+            </div>
+          </div>
+        </a>
+
+        <a target="_blank" href='https://oppnheimer.github.io/memorTree/'>
+          <div class='projectButton memorTree'>
+            <div class='description'>
+              
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <div class='parallax'>
+      <img class='parallax__img'src='./images/photos/lotus.jpg' />
+    </div>
+  </div> -->
+
+  <!-- contact -->
+  <!-- <section class='contact grey-text col s12'>
+    <div>
+      <img src='./images/icons/email.png' />
+      <p>maxoppenheimer1993@gmail.com</p>
+    </div>
+    <div>
+      <img src='./images/icons/cellphone.png' />
+      <p>502.649.3683</p>
+    </div>
+    <div>
+      <a class='grey-text' target="_blank" href='https://github.com/OppNHeimer'>
+        <img src='./images/icons/github-circle.png' />
+        <p>https://github.com/OppNHeimer</p>
+      </a>
+    </div>
+  </section> -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script type='text/javascript' src='script.js'></script>
+</body>
+
+</html>
