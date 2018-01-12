@@ -37,7 +37,6 @@ $(document).ready(function () {
   // not working, may be lack of internet
   // Materialize.scrollFire(options)
 
-
   // scroll on nav bar click
   $('nav').click(function () {
     $('html, body').animate({
