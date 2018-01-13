@@ -232,23 +232,23 @@ nav {
 
         .tile--small1 {
           top: -10vh;
-          height: 10em;
-          width: 10em;
+          height: 20vw;
+          width: 20vw;
         }
         .tile--small2 {
           top: -20vh;
-          height: 10em;
-          width: 10em;
+          height: 20vw;
+          width: 20vw;
         }
         .tile--med {
           top: 0;
-          height: 13em;
-          width: 13em;
+          height: 25vw;
+          width: 25vw;
         }
         .tile--large {
           top: 10vh;
-          height: 15em;
-          width: 15em;
+          height: 35vw;
+          width: 35vw;
         }
 
         .tile__links-container {
@@ -257,9 +257,10 @@ nav {
             justify-content: flex-end;
             height: 15%;
           opacity: 0;
-          transition-duration: 1s;
+          transition-duration: .5s;
         }
           .tile:hover .tile__links-container {
+              height: 10%;
             opacity: 1;
           }
 
@@ -287,8 +288,11 @@ nav {
             }
 
         .tile__info {
-            height: 50%;
+            position: absolute;
+            z-index: 1;
+            height: 35%;
             width: 100%;
+          background-color: white;
         }
 
           .tile__info__h4 {
@@ -316,6 +320,10 @@ nav {
           }
 
         .tile__image {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             position: absolute;
             top: 50%;
             height: 50%;
@@ -323,7 +331,22 @@ nav {
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat;
+          box-shadow: 0 2px 5px 0px rgba(20, 20, 20, 0.5) inset;
         }
+
+          .tile__image .btn {
+            position: absolute;
+            z-index: 0;
+            opacity: 0;
+            transition-duration: .4s
+          }
+
+          .tile:hover .tile__image .btn {
+            top: 40%;
+            opacity: 1;
+            box-shadow: 0 0 100px 30px white;
+          }
+
         .tile__image--hanoi {
           background-image: url('images/tower_of_hanoi.png')
         }
@@ -562,6 +585,7 @@ nav {
         border-top: 32vh solid transparent;
         border-bottom: 32vh solid transparent;
         border-right: 55.4vh solid rgb(255, 230, 255);
+      transform: rotate(-340deg);
     }
 
 
