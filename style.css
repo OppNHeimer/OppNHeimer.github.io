@@ -345,18 +345,18 @@ nav {
     }
 
     .circle-1 {
-      top: 50vh;
-      left: -20vw;
-      height: 80vw;
-      width: 80vw;
+      bottom: -140vh;
+      left: -60vh;
+      height: 200vh;
+      width: 200vh;
       background-color: rgb(220, 255, 255);
     }
 
     .circle-2 {
-      top: -90vh;
-      left: 40vw;
-      height: 90vw;
-      width: 90vw;
+      top: -47vh;
+      right: -42vh;
+      height: 120vh;
+      width: 120vh;
       background-color: rgb(255, 255, 220);
     }
 
@@ -445,20 +445,20 @@ nav {
     }
 
     .square-1 {
-      top: 63.1vh;
-      left: 3vw;
-      height: 40vw;
-      width: 40vw;
-      transform: rotate(-17deg);
+      bottom: -40vh;
+      left: 0;
+      height: 70vh;
+      width: 70vh;
+      transform: rotate(-15deg);
       background-color: rgb(255, 230, 255);
     }
 
     .square-2 {
-      top: -15.5vh;
-      left: 55vw;
-      height: 55vw;
-      width: 55vw;
-      transform: rotate(43.5deg);
+      top: -40vh;
+      right: -38.5vh;
+      height: 105vh;
+      width: 105vh;
+      transform: rotate(50deg);
       background-color: rgb(220, 255, 255)
 
     }
@@ -515,16 +515,6 @@ nav {
             align-items: center;
             margin: 5px;
         }
-
-      .contact__left__triangle {
-          position: absolute;
-          height: 0;
-          width: 0;
-          top: 2vh;
-          border-left: 45vw solid transparent;
-          border-right: 45vw solid transparent;
-          border-bottom: 90vh solid rgb(255, 255, 220);;
-      }
     
     .contact__right {
         display: flex;
@@ -550,13 +540,29 @@ nav {
           font-size: 65%;
         }
 
-      .contact__right__triangle {
+     .contact__left__triangle {
           position: absolute;
+          bottom: -20vh;
+          left: -5vh;
           height: 0;
           width: 0;
-          border-top: 90vh solid rgb(255, 230, 255);
-	        border-left: 90vh solid transparent;
+          border-left: 65vh solid transparent;
+          border-right: 65vh solid transparent;
+          border-bottom: 112.6vh solid rgb(255, 255, 220);
+        transform: rotate(20deg);
+
       }
+      
+      .contact__right__triangle {
+        position: absolute;
+        top: -14vh;
+        right: 0;
+        height: 0;
+        width: 0;
+        border-top: 32vh solid transparent;
+        border-bottom: 32vh solid transparent;
+        border-right: 55.4vh solid rgb(255, 230, 255);
+    }
 
 
 @keyframes sink-screen {
