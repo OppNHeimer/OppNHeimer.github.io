@@ -216,12 +216,12 @@ nav {
         justify-content: space-around;
         align-items: center;
         height: 92vh;
-      /* animation: portfolio-expand 1s reverse; */
     }
     
       .tile { 
           position: relative;
           border: 10px solid white;
+          margin: -10vw;
         background-color: rgb(255, 255, 255);
         border-radius: 100%;
         box-shadow: 0 3px 10px -1px rgba(0, 0, 0, 0.4);
@@ -236,26 +236,31 @@ nav {
           width: 60vw;
           height: 87vh;
           margin: 3vh;
+          z-index: 4;
         border-radius: 10px;
         color: rgb(70, 70, 70);
       }
 
         .tile--small1 {
+          z-index: 1;
           top: -10vh;
           height: 20vw;
           width: 20vw;
         }
         .tile--small2 {
+          z-index: 1;
           top: -20vh;
           height: 20vw;
           width: 20vw;
         }
         .tile--med {
+          z-index: 2;
           top: 0;
           height: 25vw;
           width: 25vw;
         }
         .tile--large {
+          z-index: 3;
           top: 10vh;
           height: 35vw;
           width: 35vw;
@@ -473,7 +478,6 @@ nav {
         height: 92vh;
         margin: 10px 10px 10px 0;
         padding: 5px;
-        /* overflow: scroll; */
     }
       .resume__right p {
         font-size: 50%;
@@ -657,8 +661,66 @@ nav {
   }
 }
 
-
-
+@media only screen and (max-width: 2800px) {
+  body {
+      font-size: 320%;
+  }
+}
+@media only screen and (max-width: 2700px) {
+  body {
+      font-size: 310%;
+  }
+}
+@media only screen and (max-width: 2600px) {
+  body {
+      font-size: 300%;
+  }
+}
+@media only screen and (max-width: 2500px) {
+  body {
+      font-size: 290%;
+  }
+}
+@media only screen and (max-width: 2400px) {
+  body {
+      font-size: 280%;
+  }
+}
+@media only screen and (max-width: 2300px) {
+  body {
+      font-size: 270%;
+  }
+}
+@media only screen and (max-width: 2200px) {
+  body {
+      font-size: 260%;
+  }
+}
+@media only screen and (max-width: 2100px) {
+  body {
+      font-size: 250%;
+  }
+}
+@media only screen and (max-width: 2000px) {
+  body {
+      font-size: 240%;
+  }
+}
+@media only screen and (max-width: 1900px) {
+  body {
+      font-size: 230%;
+  }
+}
+@media only screen and (max-width: 1800px) {
+  body {
+      font-size: 220%;
+  }
+}
+@media only screen and (max-width: 1700px) {
+  body {
+      font-size: 210%;
+  }
+}
 @media only screen and (max-width: 1600px) {
   body {
       font-size: 200%;
@@ -700,6 +762,7 @@ nav {
   }
     .about {
       flex-direction: column;
+      height: 95vh;
     }
       .about__left{
           flex-direction: row-reverse;
@@ -717,8 +780,98 @@ nav {
         height: 60vh;
         margin: auto;
       }
+    nav {
+      height: 5vh;
+    }
+    .carousel {
+      min-height: 95vh !important;
+    }
+      .tile-container {
+          flex-direction: column-reverse;
+          justify-content: space-around;
+          align-items: center;
+      }
+        .tile:hover {
+            top: 0;
+            left: 0;
+            width: 90vw;
+            height: 80vh;
+            margin: 3vh;
+            z-index: 4;
+          border-radius: 10px;
+          color: rgb(70, 70, 70);
+        }
+        
+        .tile--small1 {
+            top: -5vh;
+            left: -20vw;
+            height: 30vw;
+            width: 30vw;
+        }
+          .tile--small2 {
+            top: 10vh;
+            left: -30vw;
+            height: 30vw;
+            width: 30vw;
+          }
+          .tile--med {
+            top: 10vh;
+            left: 5vw;
+            height: 35vw;
+            width: 35vw;
+          }
+          .tile--large {
+            top: 5vh;
+            left: 20vw;
+            height: 45vw;
+            width: 45vw;
+          }
+      #resume {
+        flex-direction: column;  
+      }
+        .resume__h5 {
+          margin: 5vh 3vw 2vh 3vw;
+          text-align: center;
+        }
 
-}
+        .resume__left {
+          margin: auto;
+          width: 90vw;
+        }
+
+        .resume__right {
+          width: 90vw;
+          margin: auto;
+        }
+          .resume__right .collapsible {
+            width: 50vw;
+            margin: auto;
+          }
+      .contact__container {
+        flex-direction: column;
+        align-items: center;
+        height: 95vh;
+        width: 100vw;
+      }
+        .contact__container h5 {
+          margin-top: 15vh;
+        }
+        
+        .contact__right__links {
+          display: flex;
+          flex-direction: row;
+          margin: 15vh auto;
+          
+        /* text-align: center; */
+        }
+          .contact__right__links h5 {
+            margin: 0;
+          }
+          .contact__right__links ul {
+            margin: 0;
+          }
+
+
 @media only screen and (max-width: 800px) {
   body {
       font-size: 160%;
