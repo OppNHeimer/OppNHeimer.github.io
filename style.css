@@ -1,5 +1,6 @@
 body {
-  font-size: 100%;
+  font-size: 300%;
+  transition-duration: .1s;
 }
 
 strong {
@@ -42,6 +43,7 @@ a:hover {
   }
 
   .parallax1__header {
+      position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -51,6 +53,8 @@ a:hover {
   }
 
     .parallax__header__h1 {
+        position: relative;
+        z-index: 1;
         max-width: fit-content;
         margin: 0;
       color: rgb(255, 255, 205);
@@ -65,7 +69,6 @@ a:hover {
       .parallax__header__h1 span {
         margin: -5px;
         position: relative; /* needed for z-index to work */
-
       }
 
         .z1 {z-index: 1}
@@ -92,6 +95,14 @@ a:hover {
       font-family: 'Courier New', Courier, monospace;
     }
 
+  .arrow {
+      position: absolute;
+      align-self: center;
+      bottom: -25%;
+    font-weight: 700;
+    font-size: 800%;
+  }
+
 .about {
     display: flex;
     flex-direction: row;
@@ -102,14 +113,15 @@ a:hover {
   .about__left {
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
       align-items: center;
       min-width: 30vw;
   }
 
     .about__left__myPhoto {
-        height: 18vw;
-        width: 18vw;
-        margin: 10vh auto 3vh auto;
+        height: 25vh;
+        width: 25vh;
+        margin: 10vh 5vh 3vh 5vh;
       border-radius: 100px;
       box-shadow: 
         0px -2px 0 black,
@@ -153,9 +165,7 @@ a:hover {
       padding: 2vh 3vw;
     background-color: lightyellow;
     border-radius: 2px;
-    box-shadow:
-      -2px 0px 0 darkgrey,
-      2px 0px 0 darkgrey;
+    box-shadow: 0 2px 5px rgba(20, 20, 20, 0.5);
   }
     
     .introduction__p {
@@ -334,15 +344,18 @@ nav {
           box-shadow: 0 2px 5px 0px rgba(20, 20, 20, 0.5) inset;
         }
 
-          .tile__image .btn {
-            position: absolute;
-            z-index: 0;
-            opacity: 0;
-            transition-duration: .4s
+          .tile__image a {
+              position: absolute;
+              z-index: 0;
+              opacity: 0;
+            transition-duration: .4s;
+            color: white;
           }
 
-          .tile:hover .tile__image .btn {
-            top: 40%;
+
+
+          .tile:hover .tile__image a {
+              top: 40%;
             opacity: 1;
             box-shadow: 0 0 100px 30px white;
           }
@@ -395,6 +408,7 @@ nav {
     }
 
     .collapsible-header {
+        position: relative;
         padding: 5px;
         display: flex;
         flex-direction: row;
@@ -413,15 +427,28 @@ nav {
           margin: 5px;
       }
 
-      .collapsible-header__content h6 {
-        font-size: 100%;
-      }
+        .collapsible-header__content h6 {
+          font-size: 100%;
+        }
 
-      .collapsible-header__content p {
-          margin: 0;
-        font-size: 70%;
-        color: darkgrey;
-      }
+        .collapsible-header__content p {
+            margin: 0;
+          font-size: 70%;
+          color: darkgrey;
+        }
+      
+      .collapsible-header__plus {
+          position: absolute;
+          height: 5vh;
+          width: 5vh;
+        right: 10px;
+        transition-duration: .5s;
+        transition-timing-function: ease;
+        }
+
+        li .active .collapsible-header__plus {
+          transform: rotate(135deg);
+        }
 
     .collapsible-body {
       line-height: 1.75;
@@ -436,7 +463,6 @@ nav {
         margin: 10px;
         padding: 5px !important;
         height: 92vh;
-        /* overflow: scroll; */
     }
 
     .resume__right {
@@ -458,7 +484,7 @@ nav {
       }
 
       .resume__right .collapsible-header {
-        padding: 15px;
+        padding: 10px;
       }
 
     .square {
@@ -488,12 +514,12 @@ nav {
 
   #contact {
     background-color: rgb(220, 255, 255);
+    overflow: hidden;
   }
     
     .contact__container {
         display: flex;
         flex-direction: row;
-        /* justify-content: space-around; */
         height: 92vh;
         width: 100vw;
     }
@@ -632,101 +658,99 @@ nav {
 }
 
 
-@media only screen and (min-width: 420px) {
+
+@media only screen and (max-width: 1600px) {
   body {
-      font-size: 104%;
+      font-size: 200%;
   }
 }
-@media only screen and (min-width: 450px) {
+@media only screen and (max-width: 1500px) {
   body {
-      font-size: 108%;
+      font-size: 195%;
   }
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 1400px) {
   body {
-      font-size: 112%;
+      font-size: 190%;
   }
 }
-@media only screen and (min-width: 510px) {
+@media only screen and (max-width: 1300px) {
   body {
-      font-size: 116%;
+      font-size: 185%;
   }
 }
-@media only screen and (min-width: 540px) {
+@media only screen and (max-width: 1200px) {
   body {
-      font-size: 120%;
+      font-size: 180%;
   }
 }
-@media only screen and (min-width: 570px) {
+@media only screen and (max-width: 1100px) {
   body {
-      font-size: 124%;
+      font-size: 175%;
   }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 1000px) {
   body {
-      font-size: 128%;
+      font-size: 170%;
   }
 }
-@media only screen and (min-width: 630px) {
+@media only screen and (max-width: 900px) {
   body {
-      font-size: 132%;
+      font-size: 165%;
   }
+    .about {
+      flex-direction: column;
+    }
+      .about__left{
+          flex-direction: row-reverse;
+          align-items: center;
+          justify-content: center;
+        height: 30vh;
+      }
+        .about__left__myPhoto {
+            margin: 5vh;
+            height: 20vh;
+            width: 20vh;
+        }
+      .about__right {
+        width: 90vw;
+        height: 60vh;
+        margin: auto;
+      }
+
 }
-@media only screen and (min-width: 660px) {
-  body {
-      font-size: 136%;
-  }
-}
-@media only screen and (min-width: 690px) {
-  body {
-      font-size: 140%;
-  }
-}
-@media only screen and (min-width: 720px) {
-  body {
-      font-size: 144%;
-  }
-}
-@media only screen and (min-width: 750px) {
-  body {
-      font-size: 146%;
-  }
-}
-@media only screen and (min-width: 780px) {
-  body {
-      font-size: 148%;
-  }
-}
-@media only screen and (min-width: 810px) {
-  body {
-      font-size: 150%;
-  }
-}
-@media only screen and (min-width: 840px) {
-  body {
-      font-size: 152%;
-  }
-}
-@media only screen and (min-width: 870px) {
-  body {
-      font-size: 154%;
-  }
-}
-@media only screen and (min-width: 900px) {
-  body {
-      font-size: 156%;
-  }
-}
-@media only screen and (min-width: 930px) {
-  body {
-      font-size: 158%;
-  }
-}
-@media only screen and (min-width: 960px) {
+@media only screen and (max-width: 800px) {
   body {
       font-size: 160%;
   }
 }
+@media only screen and (max-width: 700px) {
+  body {
+      font-size: 155%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+      font-size: 150%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  body {
+      font-size: 145%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  body {
+      font-size: 140%;
+  }
+}
+
+
+
+
+
+
+
 
 
 
