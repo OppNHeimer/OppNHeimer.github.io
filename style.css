@@ -54,7 +54,6 @@ a:hover {
 
     .parallax__header__h1 {
         position: relative;
-        z-index: 1;
         max-width: fit-content;
         margin: 0;
       color: rgb(255, 255, 205);
@@ -498,7 +497,7 @@ nav {
     }
 
     .square-1 {
-      bottom: -40vh;
+      top: 62vh;
       left: 0;
       height: 70vh;
       width: 70vh;
@@ -508,7 +507,7 @@ nav {
 
     .square-2 {
       top: -40vh;
-      right: -38.5vh;
+      right: -39vh;
       height: 105vh;
       width: 105vh;
       transform: rotate(50deg);
@@ -595,7 +594,7 @@ nav {
 
      .contact__left__triangle {
           position: absolute;
-          bottom: -20vh;
+          top: 0vh;
           left: -5vh;
           height: 0;
           width: 0;
@@ -663,57 +662,57 @@ nav {
 
 @media only screen and (min-width: 2600px) {
   body {
-      font-size: 310%;
+      font-size: 290%;
   }
 }
 @media only screen and (max-width: 2600px) {
   body {
-      font-size: 300%;
+      font-size: 280%;
   }
 }
 @media only screen and (max-width: 2500px) {
   body {
-      font-size: 290%;
+      font-size: 270%;
   }
 }
 @media only screen and (max-width: 2400px) {
   body {
-      font-size: 280%;
+      font-size: 260%;
   }
 }
 @media only screen and (max-width: 2300px) {
   body {
-      font-size: 270%;
+      font-size: 250%;
   }
 }
 @media only screen and (max-width: 2200px) {
   body {
-      font-size: 260%;
+      font-size: 240%;
   }
 }
 @media only screen and (max-width: 2100px) {
   body {
-      font-size: 250%;
+      font-size: 230%;
   }
 }
 @media only screen and (max-width: 2000px) {
   body {
-      font-size: 240%;
+      font-size: 220%;
   }
 }
 @media only screen and (max-width: 1900px) {
   body {
-      font-size: 230%;
+      font-size: 215%;
   }
 }
 @media only screen and (max-width: 1800px) {
   body {
-      font-size: 220%;
+      font-size: 210%;
   }
 }
 @media only screen and (max-width: 1700px) {
   body {
-      font-size: 210%;
+      font-size: 205%;
   }
 }
 @media only screen and (max-width: 1600px) {
@@ -723,32 +722,32 @@ nav {
 }
 @media only screen and (max-width: 1500px) {
   body {
-      font-size: 195%;
+      font-size: 190%;
   }
 }
 @media only screen and (max-width: 1400px) {
   body {
-      font-size: 190%;
+      font-size: 180%;
   }
 }
 @media only screen and (max-width: 1300px) {
   body {
-      font-size: 185%;
+      font-size: 170%;
   }
 }
 @media only screen and (max-width: 1200px) {
   body {
-      font-size: 180%;
+      font-size: 165%;
   }
 }
 @media only screen and (max-width: 1100px) {
   body {
-      font-size: 170%;
+      font-size: 160%;
   }
 }
 @media only screen and (max-width: 1000px) {
   body {
-      font-size: 160%;
+      font-size: 155%;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -782,6 +781,7 @@ nav {
       min-height: 95vh !important;
     }
       .tile-container {
+          height: 95vh;
           flex-direction: column-reverse;
           justify-content: space-around;
           align-items: center;
@@ -823,6 +823,7 @@ nav {
           }
       #resume {
         flex-direction: column;  
+        height: 95vh;
       }
         .resume__h5 {
           margin: 5vh 3vw 2vh 3vw;
@@ -856,8 +857,6 @@ nav {
           display: flex;
           flex-direction: row;
           margin: 15vh auto;
-          
-        /* text-align: center; */
         }
           .contact__right__links h5 {
             margin: 0;
@@ -892,20 +891,3 @@ nav {
       font-size: 100%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
