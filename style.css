@@ -223,7 +223,7 @@ nav {
           margin: -10vw;
         background-color: rgb(255, 255, 255);
         border-radius: 100%;
-        box-shadow: 0 3px 10px -1px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.4);
         transition-duration: .5s;
         transition-timing-function: ease;
         color: rgba(255, 255, 255, 0);
@@ -385,19 +385,25 @@ nav {
     }
 
     .circle-1 {
+      z-index: -2;
       bottom: -140vh;
       left: -60vh;
       height: 200vh;
       width: 200vh;
       background-color: rgb(220, 255, 255);
+      box-shadow: 0 2px 10px 0 rgba(20, 20, 20, 0.4) inset;
+
     }
 
     .circle-2 {
+      z-index: -1;
       top: -47vh;
       right: -42vh;
       height: 120vh;
       width: 120vh;
       background-color: rgb(255, 255, 220);
+      box-shadow: 0 2px 10px 0 rgba(20, 20, 20, 0.4);
+
     }
 
   #resume {
@@ -497,21 +503,25 @@ nav {
     }
 
     .square-1 {
+      z-index: -2;
       top: 62vh;
       left: 0;
       height: 70vh;
       width: 70vh;
-      transform: rotate(-15deg);
+      transform: rotate(75deg);
       background-color: rgb(255, 230, 255);
+      box-shadow: 2px 1px 10px 0 rgba(20, 20, 20, 0.4) inset;
     }
 
     .square-2 {
+      z-index: -1;
       top: -40vh;
       right: -39vh;
       height: 105vh;
       width: 105vh;
       transform: rotate(50deg);
-      background-color: rgb(220, 255, 255)
+      background-color: rgb(220, 255, 255);
+      box-shadow: 2px 2px 10px 0 rgba(20, 20, 20, 0.4);
 
     }
 
@@ -594,27 +604,31 @@ nav {
 
      .contact__left__triangle {
           position: absolute;
-          top: 0vh;
-          left: -5vh;
-          height: 0;
-          width: 0;
-          border-left: 65vh solid transparent;
-          border-right: 65vh solid transparent;
-          border-bottom: 112.6vh solid rgb(255, 255, 220);
-        transform: rotate(20deg);
-
+          top: 2.5vh;
+          left: 3vh;
+          height: 180vh;
+          width: 180vh;
+        font-size: 160vh;
+        background-color: rgba(20, 20, 20, 0.4);
+        color: transparent;
+        text-shadow: 2px 2px 8px rgb(255, 255, 220);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        transform: rotate(50deg);
       }
-      
+
       .contact__right__triangle {
-        position: absolute;
-        top: -14vh;
-        right: 0;
-        height: 0;
-        width: 0;
-        border-top: 32vh solid transparent;
-        border-bottom: 32vh solid transparent;
-        border-right: 55.4vh solid rgb(255, 230, 255);
-      transform: rotate(-340deg);
+          position: absolute;
+          top: -50vh;
+          right: -45vh;
+          height: 100vh;
+          width: 100vh;
+        font-size: 80vh;
+        background-color: transparent;
+        color: rgb(255, 230, 255);
+        text-shadow: -2px 2px 10px rgba(20, 20, 20, 0.4);
+      transform: rotate(-40deg);
     }
 
 
