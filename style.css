@@ -379,19 +379,13 @@ nav {
             .tile__link--github:hover {
               background-image: url('images/icons/github-circle-light.png')
             }
-            /* icon by Google (@Google on twitter) */
-            .tile__link--deployed {
-              background-image: url('images/icons/web-dark.png')
-            }
-            /* icon by Google (@Google on twitter) */
-            .tile__link--deployed:hover {
-              background-image: url('images/icons/web-light.png')
-            }
 
         .tile__info {
+            display: flex;
+            flex-direction: column;
             position: absolute;
             z-index: 1;
-            height: 35%;
+            height: 40%;
             width: 100%;
           background-color: white;
         }
@@ -445,8 +439,9 @@ nav {
                   box-shadow: 0 2px 5px 0px rgba(20, 20, 20, 0.5) inset;
         }
 
-          .tile__image a {
-              position: absolute;
+          .tile__info a {
+              /* position: absolute; */
+              align-self: center;
               z-index: 0;
               opacity: 0;
             -webkit-transition-duration: .4s;
@@ -457,11 +452,8 @@ nav {
 
 
 
-          .tile:hover .tile__image a {
-              top: 40%;
+          .tile:hover .tile__info a {
             opacity: 1;
-            -webkit-box-shadow: 0 0 100px 30px white;
-                    box-shadow: 0 0 100px 30px white;
           }
 
         .tile__image--hanoi {
