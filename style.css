@@ -127,6 +127,8 @@ a:hover {
       bottom: -25%;
     font-weight: 700;
     font-size: 800%;
+    -webkit-animation: arrow-blink 1.5s 4s;
+            animation: arrow-blink 1.5s 4s;
   }
 
 .about {
@@ -385,11 +387,14 @@ nav {
             flex-direction: column;
             position: absolute;
             z-index: 1;
-            height: 40%;
+            height: 35%;
             width: 100%;
           background-color: white;
         }
 
+        .tile:hover .tile__info {
+          height: 40%;
+        }
           .tile__info__h4 {
               text-align: center;
               margin: 0 auto;
@@ -412,6 +417,11 @@ nav {
             font-size: 60%;
             letter-spacing: 1px;
             word-spacing: 1px;
+          }
+
+          .tile__info a {
+              align-self: center;
+            color: white;
           }
 
         .tile__image {
@@ -439,36 +449,19 @@ nav {
                   box-shadow: 0 2px 5px 0px rgba(20, 20, 20, 0.5) inset;
         }
 
-          .tile__info a {
-              /* position: absolute; */
-              align-self: center;
-              z-index: 0;
-              opacity: 0;
-            -webkit-transition-duration: .4s;
-                 -o-transition-duration: .4s;
-                    transition-duration: .4s;
-            color: white;
+          .tile__image--hanoi {
+            background-image: url('images/tower_of_hanoi.png')
+          }
+          .tile__image--memorTree {
+            background-image: url('images/memorTree.png')
+          }
+          .tile__image--codePOS {
+            background-image: url('images/codePOS.png')
+          }
+          .tile__image--ga-aha {
+            background-image: url('images/GA-Aha.png')
           }
 
-
-
-          .tile:hover .tile__info a {
-            opacity: 1;
-          }
-
-        .tile__image--hanoi {
-          background-image: url('images/tower_of_hanoi.png')
-        }
-        .tile__image--memorTree {
-          background-image: url('images/memorTree.png')
-        }
-        .tile__image--codePOS {
-          background-image: url('images/codePOS.png')
-        }
-        .tile__image--ga-aha {
-          background-image: url('images/GA-Aha.png')
-
-        }
     .circle {
         position: absolute;
         z-index: -1;
@@ -864,6 +857,49 @@ nav {
     opacity: 1;
   }
 }
+
+@-webkit-keyframes arrow-blink {
+  0% {
+    color: rgb(255, 180, 180);
+  }
+  33% {
+    color: rgb(255, 255, 205);
+  }
+  38% {
+    color: rgb(255, 180, 180);
+  }
+  66% {
+    color: rgb(255, 255, 205);
+  }
+  73% {
+    color: rgb(255, 180, 180);
+  }
+  100% {
+    color: rgb(255, 255, 205);
+  }
+}
+
+@keyframes arrow-blink {
+  0% {
+    color: rgb(255, 180, 180);
+  }
+  33% {
+    color: rgb(255, 255, 205);
+  }
+  38% {
+    color: rgb(255, 180, 180);
+  }
+  66% {
+    color: rgb(255, 255, 205);
+  }
+  73% {
+    color: rgb(255, 180, 180);
+  }
+  100% {
+    color: rgb(255, 255, 205);
+  }
+}
+
 
 @media only screen and (min-width: 2600px) {
   body {
