@@ -990,11 +990,21 @@ nav {
   body {
       font-size: 155%;
   }
+      .parallax__img {
+        min-width: 120%;
+        max-width: 140%;
+        min-height: 100%;
+    }
 }
 @media only screen and (max-width: 900px) {
   body {
       font-size: 150%;
   }
+    .parallax__img {
+        min-width: 140%;
+        max-width: 180%;
+        min-height: 100%;
+    }
     .about {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -1140,11 +1150,21 @@ nav {
   body {
       font-size: 140%;
   }
+    .parallax__img {
+        min-width: 180%;
+        max-width: 200%;
+        min-height: 100%;
+    }
 }
 @media only screen and (max-width: 700px) {
   body {
       font-size: 130%;
   }
+    .parallax__img {
+      min-width: 200%;
+      max-width: 240%;
+      min-height: 100%;
+    }
 }
 @media only screen and (max-width: 600px) {
   body {
