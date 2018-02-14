@@ -1,5 +1,4 @@
 body {
-  font-size: 300%;
   -webkit-transition-duration: .1s;
        -o-transition-duration: .1s;
           transition-duration: .1s;
@@ -320,30 +319,43 @@ nav {
         color: rgb(70, 70, 70);
       }
 
-        .tile--small1 {
+        .tile--small {
           z-index: 1;
-          top: -10vh;
-          height: 20vw;
-          width: 20vw;
-        }
-        .tile--small2 {
-          z-index: 1;
-          top: -20vh;
+          /* top: -10vh; */
           height: 20vw;
           width: 20vw;
         }
         .tile--med {
           z-index: 2;
-          top: 0;
+          /* top: 0; */
           height: 25vw;
           width: 25vw;
         }
         .tile--large {
           z-index: 3;
-          top: 10vh;
+          /* top: 10vh; */
           height: 35vw;
           width: 35vw;
         }
+          .hanoi {
+            top: -5vh;
+            left: 5vw;
+          }
+          .codePOS {
+            top: 20vh;
+          }
+          .GAAha {
+            top: -20vh;
+            left: -5vw;
+          }
+          .memorTree {
+            top: 10vh;
+            left: -7vw;
+          }
+          .habit100 {
+            top: -18vh;
+            left: -5vw;
+          }
 
         .tile__links-container {
             display: -webkit-box;
@@ -460,6 +472,9 @@ nav {
           }
           .tile__image--ga-aha {
             background-image: url('images/GA-Aha.png')
+          }
+          .tile__image--habit100 {
+            background-image: url('images/habit100.png')
           }
 
     .circle {
@@ -903,92 +918,92 @@ nav {
 
 @media only screen and (min-width: 2600px) {
   body {
-      font-size: 290%;
+      font-size: 280%;
   }
 }
 @media only screen and (max-width: 2600px) {
   body {
-      font-size: 280%;
+      font-size: 270%;
   }
 }
 @media only screen and (max-width: 2500px) {
   body {
-      font-size: 270%;
+      font-size: 260%;
   }
 }
 @media only screen and (max-width: 2400px) {
   body {
-      font-size: 260%;
+      font-size: 250%;
   }
 }
 @media only screen and (max-width: 2300px) {
   body {
-      font-size: 250%;
+      font-size: 240%;
   }
 }
 @media only screen and (max-width: 2200px) {
   body {
-      font-size: 240%;
+      font-size: 230%;
   }
 }
 @media only screen and (max-width: 2100px) {
   body {
-      font-size: 230%;
+      font-size: 220%;
   }
 }
 @media only screen and (max-width: 2000px) {
   body {
-      font-size: 220%;
+      font-size: 210%;
   }
 }
 @media only screen and (max-width: 1900px) {
   body {
-      font-size: 215%;
+      font-size: 205%;
   }
 }
 @media only screen and (max-width: 1800px) {
   body {
-      font-size: 210%;
+      font-size: 200%;
   }
 }
 @media only screen and (max-width: 1700px) {
   body {
-      font-size: 205%;
+      font-size: 190%;
   }
 }
 @media only screen and (max-width: 1600px) {
   body {
-      font-size: 200%;
+      font-size: 180%;
   }
 }
 @media only screen and (max-width: 1500px) {
   body {
-      font-size: 190%;
+      font-size: 170%;
   }
 }
 @media only screen and (max-width: 1400px) {
   body {
-      font-size: 180%;
+      font-size: 160%;
   }
 }
 @media only screen and (max-width: 1300px) {
   body {
-      font-size: 170%;
+      font-size: 150%;
   }
 }
 @media only screen and (max-width: 1200px) {
   body {
-      font-size: 165%;
+      font-size: 145%;
   }
 }
 @media only screen and (max-width: 1100px) {
   body {
-      font-size: 160%;
+      font-size: 140%;
   }
 }
 @media only screen and (max-width: 1000px) {
   body {
-      font-size: 155%;
+      font-size: 135%;
   }
       .parallax__img {
         min-width: 120%;
@@ -998,7 +1013,7 @@ nav {
 }
 @media only screen and (max-width: 900px) {
   body {
-      font-size: 150%;
+      font-size: 130%;
   }
     .parallax__img {
         min-width: 140%;
@@ -1064,30 +1079,38 @@ nav {
           color: rgb(70, 70, 70);
         }
         
-        .tile--small1 {
-            top: -5vh;
-            left: -20vw;
+        .tile--small {
             height: 25vh;
             width: 25vh;
         }
-          .tile--small2 {
-            top: 5vh;
-            left: -30vw;
-            height: 25vh;
-            width: 25vh;
-          }
           .tile--med {
-            top: 5vh;
-            left: 10vw;
             height: 30vh;
             width: 30vh;
           }
           .tile--large {
-            top: -5vh;
-            left: 20vw;
             height: 40vh;
             width: 40vh;
           }
+            .hanoi {
+              top: -10vh;
+              left: 5vw;
+            }
+            .codePOS {
+              top: 0vh;
+              left: -25vw;
+            }
+            .GAAha {
+              top: -15vh;
+              left: -25vw;
+            }
+            .memorTree {
+              top: 15vh;
+              left: 20vw;
+            }
+            .habit100 {
+              top: 10vh;
+              left: 5vw;
+            }
       #resume {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -1148,7 +1171,7 @@ nav {
 
 @media only screen and (max-width: 800px) {
   body {
-      font-size: 140%;
+      font-size: 125%;
   }
     .parallax__img {
         min-width: 180%;
@@ -1158,7 +1181,7 @@ nav {
 }
 @media only screen and (max-width: 700px) {
   body {
-      font-size: 130%;
+      font-size: 120%;
   }
     .parallax__img {
       min-width: 200%;
@@ -1168,7 +1191,7 @@ nav {
 }
 @media only screen and (max-width: 600px) {
   body {
-      font-size: 120%;
+      font-size: 115%;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -1178,6 +1201,6 @@ nav {
 }
 @media only screen and (max-width: 400px) {
   body {
-      font-size: 100%;
+      font-size: 105%;
   }
 }
