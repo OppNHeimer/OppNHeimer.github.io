@@ -761,10 +761,10 @@ nav {
 
      .contact__left__triangle {
           position: absolute;
-          top: 2.5vh;
+          top: 12vh;
           left: 3vh;
-          height: 180vh;
-          width: 180vh;
+          height: 200vh;
+          width: 200vh;
         font-size: 160vh;
         background-color: transparent;
         color: rgb(255, 255, 220);
