@@ -88,7 +88,6 @@ a:hover {
     }
 
       .parallax__header__h1 span {
-        /* margin: -5px; */
         position: relative; /* needed for z-index to work */
       }
 
@@ -759,17 +758,19 @@ nav {
         }
 
      .contact__left__triangle {
+        box-sizing: border-box;
           position: absolute;
-          top: 12vh;
-          left: 3vh;
-          height: 200vh;
-          width: 200vh;
+          /* letter-spacing: 10vh; */
+          top: 115vh;
+          /* left: 10vh; */
+          height: 100vh;
+          width: 100vh;
         font-size: 160vh;
         background-color: transparent;
         color: rgb(255, 255, 220);
-        -webkit-transform: rotate(50deg);
-            -ms-transform: rotate(50deg);
-                transform: rotate(50deg);
+        -webkit-transform: rotate(-192deg);
+            -ms-transform: rotate(-192deg);
+                transform: rotate(-192deg);
       }
 
       .contact__right__triangle {
